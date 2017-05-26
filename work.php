@@ -11,4 +11,5 @@ include("head.php");
   include("html/footer.html");
   ?>
 </body>
+<script src="myJS/toggleClass.js"></script>
 </html>
