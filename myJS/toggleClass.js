@@ -1,13 +1,13 @@
 $( ".toggleMySites" ).click(function() {
-  $( ".notMySite" ).addClass( "active" );
-  if($(".mySite").hasClass("active")) {
-    $( ".mySite" ).toggleClass( "active" );
+  $( ".notMySite" ).addClass( "active-client" );
+  if($(".mySite").hasClass("active-client")) {
+    $( ".mySite" ).toggleClass( "active-client" );
   };
 });
 
 $( ".toggleUpdates" ).click(function() {
-  $( ".mySite" ).addClass( "active" );
-  if($(".notMySite").hasClass("active")) {
-    $( ".notMySite" ).toggleClass( "active" );
+  $( ".mySite" ).addClass( "active-client" );
+  if($(".notMySite").hasClass("active-client")) {
+    $( ".notMySite" ).toggleClass( "active-client" );
   };
 });
