@@ -1,0 +1,78 @@
+/* threesome section
+-------------------------------------------------- */
+
+/* Center align the rows and add margins */
+.promotion {
+  padding-top: 30px;
+  background-color: #f1f1f2;
+  width: 100% !important;
+}
+.promotion .col-lg-4 {
+  text-align: center;
+}
+.promotion .col-lg-4 p {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.promotion .col-lg-4 .btn-info {
+  background-color: #E37222;
+  border-color: #E37222;
+}
+.promotion .col-lg-4 .btn-info:hover {
+  background-color: #E35222;
+}
+.promotion .devices i {
+  color: #428BCA;
+  margin: 0;
+}
+.promotion i {
+  font-size: 150px;
+  color: #428BCA;
+}
+/* home jumbotron
+------------------------- */
+#home .jumbotron {
+  margin-top: 30px;
+  width: 100% !important;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+.jumbotron:after {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -35px;
+    content:'';
+    width: 0;
+    height: 0;
+    border-top: solid 35px white;
+    border-left: solid 35px transparent;
+    border-right: solid 35px transparent;
+}
+.aboutMePromo {
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .my-response-img {
+    height: 300px !important;
+  }
+    .jumbotron::after {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+}
+
+@media (max-width: 600px) {
+  .promotion .col-lg-4 i {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,44 @@
+/*----------------Web design
+-------------------------------*/
+.services-section-1 {
+  margin-bottom: 30px;
+}
+.nav-pills {
+  margin-top: 25px;
+}
+.logo-skills-wrap {
+  /*float: left;*/
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  justify-content: center;
+}
+.nav-pills > li > a {
+  background-color: #f1f1f2;
+  text-align: center;
+}
+.nav-pills > li.active > a {
+  background-color: #428BCA !important;
+}
+.nav-pills > li > a:hover {
+  background-color: #ccc !important;
+}
+.nav-pills > li.active > a:hover {
+  background-color: #428BCA !important;
+}
+.left-para {
+  font-size: 15px;
+}
+.left-sub-header {
+  /*color: #E37222;*/
+  font-style: italic;
+}
+/*----------------Social Media Marketing
+-------------------------------*/
+#socialmedia i {
+  font-size: 40px;
+  color: #E37222;
+}
+#socialmedia i:hover {
+  color: #E35222;
+}

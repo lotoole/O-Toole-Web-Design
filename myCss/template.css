@@ -1,0 +1,202 @@
+body, html {
+  font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #428BCA;
+}
+::-moz-selection {
+  background: #428BCA;
+}
+/*----------------Active Page
+-------------------------------*/
+#home .homeActive a,
+#work .workActive a,
+#services .servicesActive > a,
+#services2 .servicesActive > a,
+#services .servicesActive .servicesActive1 a,
+#services2 .servicesActive .servicesActive2 a,
+#contact .contactActive a {
+  background-color: #f1f1f2;
+  color: #428BCA !important;
+}
+.navbar {
+  margin-bottom: 0 !important;
+}
+.btn-info, .btn-primary {
+  background-color: #E37222 !important;
+  border-color: #E37222 !important;
+}
+.btn-info:hover, .btn-primary:hover {
+  background-color: #E35222 !important;
+}
+/*----------------Header For Each Page
+-------------------------------*/
+#services2 .landingHeader, #services .landingHeader {
+  text-align: center;
+  color: black;
+  background-color: #f1f1f2;
+  background-image: url(../images/design-landing.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landingHeader h3 {
+  padding-bottom: 30px;
+  color: #E37222;
+  font-style: italic;
+}
+#work .landingHeader h3 {
+  color: white;
+}
+/*My work heading*/
+#work .landingHeader {
+  text-align: center;
+  color: white;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ),url(../images/home-office.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*---------------------------------------------------contact promo css-------------------------------*/
+.contact-promo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #ccc;
+}
+.contact-promo h1 {
+  margin: 0;
+  padding-right: 30px;
+}
+.contact-promo .promo-button {
+  background-color: #E37222;
+  width: 150px !important;
+  font-size: 0.8em;
+  border-radius: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1em 2.5em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  border: 2px solid #E37222;
+  color: black;
+}
+.contact-promo .promo-button:hover {
+  background-color: #E35222;
+  color: white;
+}
+@media (max-width: 500px) {
+  .contact-promo {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .contact-promo .promo-button {
+    margin-top: 20px;
+  }
+}
+/*----------------footer css
+-------------------------------*/
+footer {
+  background-color: #f1f1f2;
+  color: #727272;
+  height: 300px;
+  width: 100%;
+  padding: 30px;
+  display: flex !important;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+/*left footer*/
+.footer-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.footer-left h4 i {
+  padding-right: 20px;
+  color: #428BCA;
+}
+.footer-left p {
+  padding-top: 30px;
+}
+/*right footer*/
+.footer-right .top {
+  text-align: right;
+  font-size: 17px;
+}
+.footer-right .middle {
+  color: #4b4d58;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.footer-right .top p:nth-child(1) {
+  padding-top: 20px;
+}
+.footer-right .middle i {
+  font-size: 40px;
+}
+.footer-right .middle  {
+  margin-top: 30px;
+}
+.pull {
+  margin-top: 10px;
+  float: right;
+}
+@media (max-width: 750px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-right, .footer-left {
+    width: 100%;
+  }
+  .footer-right .top {
+    text-align: center;
+  }
+  .footer-right .middle {
+    justify-content: center;
+    align-items: center;
+  }
+  .pull {
+    float: none;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    display: none !important;
+  }
+}

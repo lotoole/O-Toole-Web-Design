@@ -1,0 +1,136 @@
+/* Carousel Styling */
+.slide1{
+  background-image: url('../images/wood2.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('../design/wood.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('../images/wood3.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-family: 'Pacifico', cursive;
+  padding-bottom: 0.5em;
+}
+.carousel-caption h2 {
+  font-family: 'Pacifico', cursive;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+/*slide one*/
+.devices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.devices i {
+  font-size: 150px;
+  color: white;
+  margin-right: 10px;
+}
+.carousel-inner h1 {
+  animation-delay: 0.5s;
+}
+.carousel-inner h2 {
+  animation-delay: 1.5s;
+}
+.carousel-inner a {
+  animation-delay: 2.5s;
+}
+.devices i:nth-child(1) {
+  animation-delay: 2.5s;
+}
+.devices i:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.devices i:nth-child(3) {
+  animation-delay: 2.5s;
+}
+.black-back {
+  background-color: white;
+  color: black;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+/*slide 2 styles*/
+.slide2-top-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.top-left {
+  animation-delay: 0.5s;
+}
+.top-right {
+  animation-delay: 1.5s;
+}
+.slide2-top-wrapper i {
+  font-size: 80px;
+  color: white;
+}
+.slide2-bottom-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  animation-delay: 2.5s;
+}
+/*slide 3*/
+#slide3Wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+#slide3Wrap i {
+  font-size: 100px;
+  color: white;
+}
+#slide3Wrap h1 {
+  font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  background-color: white;
+  color: #428BCA;
+  width: 200px;
+  margin: auto;
+}
+.slide3-icon-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.slide3-left-wrapper {
+  animation-delay: 0.5s;
+}
+.slide3-middle-wrapper {
+  animation-delay: 1.5s;
+}
+.slide3-right-wrapper {
+  animation-delay: 2.5s;
+}
+
+
+@media (max-width: 800px) {
+  #theCarousel {
+    display: none;
+  }
+}

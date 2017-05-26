@@ -1,0 +1,153 @@
+.partnerWrap {
+  position: relative;
+  margin: auto;
+  height: 200px;
+  /*background-image: url(../images/GIMP/textureCon.jpg);*/
+  background-color: #ccc;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+/*Default Display: None*/
+.Slides {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+/*style the next and prev buttons*/
+.previous, .next {
+  position: absolute;
+  top: 75px;
+  transition: 0.7s ease-in-out;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.previous:hover , .next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  cursor: pointer;
+}
+.next {
+  right: 0;
+}
+.previous i, .next i {
+  color: white;
+  font-size: 30px;
+}
+.previous i, .next i {
+  color: #428BCA;
+}
+/*style inside of slides*/
+.Slides .logoWrap {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  height: 80%;
+  width: 80%;
+}
+.Slides > a:nth-child(4) {
+  margin-right: 0;
+}
+.Slides a img {
+  position: relative;
+  height: 175px;
+  width: 175px;
+  margin-right: 20px;
+}
+.Slides a div {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 999999;
+}
+/*background image links*/
+.stowebury {
+  background-image: url(../images/logos/cropped-logo.png);
+}
+.GMG {
+  background-image: url(../images/logos/home-gmg.jpg);
+}
+.Kat {
+  background-image: url(../images/logos/kat-logo.jpg);
+}
+.CRSC {
+  background-image: url(../images/logos/logo-1-crop.jpeg);
+}
+/*set two*/
+.US {
+  background-image: url(../images/logos/logo-linkedin.jpeg);
+}
+.SamMiller {
+  background-image: url(../images/logos/logo-sam.png);
+}
+.tinyAcorn {
+  background-image: url(../images/logos/tiny-acorn.jpg);
+}
+.Print {
+  background-image: url(../images/logos/logo-1.png);
+}
+.Slides a img:nth-child(4) {
+  margin-right: 0;
+}
+.Slides .logoWrap a div {
+  /*box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);*/
+  /*cursor: pointer;*/
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+.Slides .logoWrap a div:hover {
+  transform: scale(1.1);
+}
+/*Transition*/
+.transition {
+  -webkit-animation-name: fade;
+-webkit-animation-duration: 2.5s;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-fill-mode: forwards;
+animation-delay: 0ms;
+animation-name: fade;
+animation-duration: 300ms;
+animation-timing-function: ease-in-out;
+animation-fill-mode: forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: rotateY(0deg) translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateX(0px);
+  }
+}
+
+@media(max-width: 775px) {
+  .Slides .logoWrap {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .partnerWrap {
+    height: auto;
+  }
+  .previous, .next {
+    top: 200px;
+  }
+}
+@media(max-width: 500px) {
+  .previous, .next {
+    top: 400px;
+  }
+}

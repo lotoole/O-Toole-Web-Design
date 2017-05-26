@@ -1,0 +1,148 @@
+
+.contact-info-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*----------------Form
+-------------------------------*/
+/*--------------------------------------Get in touch section------------------------------*/
+.get-in-touch {
+  position: relative;
+  width: 50%;
+  background-color: #428BCA;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+.get-in-touch h3 {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  color: #ccc;
+}
+.get-in-touch h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+/*--------------------------------------General form styles------------------------------*/
+#frmRegister {
+  position: relative;
+  width: 50%;
+  background-color: #428BCA;
+  /*color: black !important;*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+#frmRegister input {
+  width: 400px;
+  color: black;
+}
+label {
+  width: 400px;
+  color: white;
+}
+.text-on-top, .float-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+#txtComments {
+  width: 400px;
+  height: 100px;
+}
+.mistake {
+    color: #fff;
+    background-color: red;
+}
+#errors h3 {
+    color: red;
+}
+#errors ol {
+    text-align: center;
+    color: red;
+    list-style-type: none;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #ccc;
+  height: 500px;
+}
+/*--------------------------------------button------------------------------*/
+.form-button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+#btnSubmit {
+  width: 150px !important;
+  font-size: 0.8em;
+  border-radius: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1em 2.5em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  border: 2px solid white;
+  color: white;
+}
+#btnSubmit:hover {
+  background-color: #E37222;
+}
+@media (max-width: 950px) {
+  .form-wrapper {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .get-in-touch, #frmRegister {
+    width: 100%;
+  }
+  #frmRegister {
+    align-items: center;
+  }
+  .get-in-touch {
+    padding: 20px;
+  }
+  label, input, #txtComments {
+    width: 200px !important;
+  }
+  .float-left, .form-button-wrap {
+    margin-left: 0;
+  }
+}
+@media (max-width: 350px) {
+  .contact-info-wrap h1 {
+    font-size: 20px !important;
+    text-align: center;
+  }
+  #frmRegister, .get-in-touch {
+    display: none;
+  }
+}
